@@ -9,6 +9,8 @@ def mul(n1,n2):
     return n1*n2
 def div(n1,n2):
     return n1/n2
+def pow(base,expo):
+    return base**expo
 
 
 while(1):
@@ -17,7 +19,8 @@ while(1):
     print("2.Subtraction")
     print("3.Multiplication")
     print("4.Division")
-    print("5.EXIT")
+    print("5.Power")
+    print("6.EXIT")
     op=int(input("choose one operation"))
     
     if op==1:
@@ -37,6 +40,10 @@ while(1):
         n2=int(input("Enter second number"))
         print(n1,"/",n2,"=",div(n1,n2))
     elif op==5:
+        n1=int(input("Enter first number"))
+        n2=int(input("Enter second number"))
+        print(n1,"^",n2,"=",pow(n1,n2))
+    elif op==6:
         break
     else:
         print("Invalid Option")
